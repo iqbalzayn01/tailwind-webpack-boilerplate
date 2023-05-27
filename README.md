@@ -2,6 +2,20 @@
 
 Basic boilerplate to get started slicing so you don't need to think about configuration.
 
+# Quick Start
+
+1. Clone the repository into a new folder for your new project.
+
+```
+git clone https://github.com/iqbalzayn01/tailwind-webpack-boilerplate.git my-project
+```
+
+2. Remove the .git directory
+
+```
+rm -rf .git
+```
+
 ## Instalation
 
 Clone this repo and npm install

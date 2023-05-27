@@ -9,10 +9,10 @@ module.exports = merge(config, {
     static: {
       directory: path.join(__dirname, "src"),
     },
-    open: true,
+    open: false,
     hot: false,
     compress: true,
-    port: 8080,
+    port: 9000,
     liveReload: true,
   },
   output: {
