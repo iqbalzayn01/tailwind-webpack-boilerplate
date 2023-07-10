@@ -4,12 +4,13 @@ const glob = require("glob");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 function generateHtmlPlugins() {
-  const files = glob.sync("./src/*.html");
+  const files = glob.sync("*.html", { cwd: "./src" }); // Mengambil file-file .html dari direktori ./src
 
   return files.map((file) => {
     return new HtmlWebpackPlugin({
-      filename: file.replace("src", ""),
-      template: file,
+      filename: file,
+      template: `./src/${file}`, // Gunakan path yang mencerminkan struktur asli file
+      inject: true,
     });
   });
 }

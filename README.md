@@ -16,9 +16,10 @@ git clone https://github.com/iqbalzayn01/tailwind-webpack-boilerplate.git my-pro
 rm -rf .git
 ```
 
-## Instalation
+## Installation
 
-Clone this repo and npm install
+1. Open the terminal or command prompt.
+2. Type the following command and press Enter:
 
 ```
 npm install
@@ -26,19 +27,40 @@ npm install
 
 ## Usage
 
+Here are some Webpack configuration files:
+
+1. webpack.config.js is the main file that contains the Webpack configuration for processing and building the web, including settings like entry, output, loader usage, and required plugins.
+2. There are webpack.dev.js and webpack.prod.js files for different development and production mode configurations, each containing specific configurations for their respective modes.
+
 ### Development server
 
+1. Open the terminal or command prompt.
+2. Type the following command and press Enter:
+
 ```
-npm start
+npm run serve
 ```
 
-### Development build
+3. Once the development server is successfully running, open a web browser.
+4. Type localhost:9000 in the browser address bar and press Enter.
+
+   > Make sure the port used is 9000 as per the default configuration. If this port has been changed in the configuration, replace it with the appropriate port number.
+
+5. The developed web page will be displayed in the browser.
+
+### Development build (development mode)
+
+1. Open the terminal or command prompt.
+2. Type the following command and press Enter:
 
 ```
 npm build:dev
 ```
 
-### Production build
+### Production build (production mode)
+
+1. Open the terminal or command prompt.
+2. Type the following command and press Enter:
 
 ```
 npm run build:prod
@@ -51,3 +73,9 @@ npm run build:prod
 - [Sass](https://sass-lang.com/)
 - [PostCSS](https://postcss.org/)
 - [Tailwindcss](https://tailwindcss.com/)
+
+### Social media
+
+- [Instagram](https://www.instagram.com/iqbalzayn01/)
+- [Github](https://github.com/iqbalzayn01)
+- [Medium](https://medium.com/@iqbalzayn01)
