@@ -1,6 +1,5 @@
 const path = require("path");
 const environment = require("./env");
-const glob = require("glob");
 const config = require("../webpack.config.js");
 const { merge } = require("webpack-merge");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -12,7 +11,6 @@ module.exports = merge(config, {
   mode: "production",
   devtool: false,
   output: {
-    // path: path.resolve(__dirname, "../dist/"),
     path: environment.paths.output,
     filename: "js/[name].[contenthash].js",
     assetModuleFilename: "images/[hash][ext]",

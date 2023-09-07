@@ -15,12 +15,10 @@ module.exports = merge(config, {
     open: false,
     hot: false,
     compress: true,
-    // port: 9000,
     liveReload: true,
     ...environment.server,
   },
   output: {
-    // path: path.resolve(__dirname, "../dist/"),
     path: environment.paths.output,
     filename: "js/[name].js",
     assetModuleFilename: "images/[name][ext]",
