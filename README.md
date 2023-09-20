@@ -2,7 +2,7 @@
 
 Basic boilerplate to get started slicing so you don't need to think about configuration.
 
-# Quick Start
+## Quick Start
 
 1. Clone the repository into a new folder for your new project.
 
@@ -42,9 +42,9 @@ npm run serve
 ```
 
 3. Once the development server is successfully running, open a web browser.
-4. Type localhost:9000 in the browser address bar and press Enter.
+4. Type localhost:9999 in the browser address bar and press Enter.
 
-   > Make sure the port used is 9000 as per the default configuration. If this port has been changed in the configuration, replace it with the appropriate port number.
+   > Make sure the port used is 9999 as per the default configuration. If this port has been changed in the configuration, replace it with the appropriate port number.
 
 5. The developed web page will be displayed in the browser.
 
