@@ -2,7 +2,7 @@
 
 Basic boilerplate to get started slicing so you don't need to think about configuration.
 
-# Quick Start
+## Quick Start
 
 1. Clone the repository into a new folder for your new project.
 
