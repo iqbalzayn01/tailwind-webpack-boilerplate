@@ -2,7 +2,6 @@ const path = require("path");
 const fs = require("fs");
 const environment = require("./config/env");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const templateFiles = fs.readdirSync(
@@ -29,20 +28,7 @@ module.exports = {
       chunks: "all",
     },
   },
-  plugins: [
-    // new CopyPlugin({
-    //   patterns: [
-    //     {
-    //       from: path.resolve(environment.paths.source, "images", "content"),
-    //       to: path.resolve(environment.paths.output, "images", "content"),
-    //       toType: "dir",
-    //       globOptions: {
-    //         ignore: ["*.DS_Store", "Thumbs.db"],
-    //       },
-    //     },
-    //   ],
-    // }),
-  ].concat(generateHtmlPlugins),
+  plugins: [].concat(generateHtmlPlugins),
   devtool: false,
   module: {
     rules: [
@@ -58,12 +44,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: [
-          MiniCssExtractPlugin.loader,
-          // Translates CSS into CommonJS
-          "css-loader",
-          "postcss-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
         test: /\.html$/i,
